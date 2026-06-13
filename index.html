@@ -853,84 +853,6 @@ footer a{color:var(--ouro);}
 
 
 
-.mobile-bimodal-card{display:none;}
-@media(max-width:768px){
-  .mobile-bimodal-card{
-    display:block;
-    width:100%;
-    max-width:340px;
-    margin:12px auto 8px;
-    background:#F5EED9;
-    color:#17120B;
-    border:1px solid rgba(201,169,60,.65);
-    box-shadow:0 12px 34px rgba(0,0,0,.32);
-    padding:15px 14px 14px;
-    text-align:center;
-    border-radius:4px;
-  }
-  .mobile-bimodal-eyebrow{
-    color:#8B1E12;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    font-size:9.5px;
-    font-weight:800;
-    margin-bottom:8px;
-  }
-  .mobile-bimodal-title{
-    font-family:'Playfair Display',serif;
-    font-size:23px;
-    line-height:1.02;
-    font-weight:900;
-    margin-bottom:9px;
-  }
-  .mobile-bimodal-title span{
-    position:relative;
-    display:inline-block;
-    color:#34271E;
-  }
-  .mobile-bimodal-title span::after{
-    content:"";
-    position:absolute;
-    left:-3%;
-    right:-3%;
-    top:54%;
-    height:3px;
-    background:#9e3024;
-    border-radius:999px;
-    transform:rotate(-3deg);
-  }
-  .mobile-bimodal-title strong{
-    display:inline-block;
-    color:#9e3024;
-    font-size:1.22em;
-  }
-  .mobile-bimodal-card p{
-    font-size:12.2px;
-    line-height:1.48;
-    margin:0 0 10px;
-    color:#2E281C;
-  }
-  .mobile-bimodal-card p b{color:#8B1E12;}
-  .mobile-bimodal-card a{
-    display:block;
-    background:#8B1E12;
-    color:#fff;
-    text-transform:uppercase;
-    letter-spacing:1.6px;
-    font-size:11.5px;
-    font-weight:900;
-    padding:12px 10px;
-    text-decoration:none;
-    margin:0 0 7px;
-  }
-  .mobile-bimodal-card small{
-    display:block;
-    color:#6D624D;
-    font-size:9.8px;
-    line-height:1.35;
-  }
-}
-
 /* BLOQUES SLOW MARKETING */
 .rabino-note{
   color:#BFD6BF;
@@ -1028,17 +950,6 @@ footer a{color:var(--ouro);}
 <p class="pagamentos">Pago seguro · <strong>Hotmart</strong> · Visa · Mastercard · PayPal</p>
 <p class="currency-note">El precio es fijo: <strong>US$9,90</strong>. Hotmart o tu banco convierte automáticamente a la moneda de tu país.</p>
 <p class="mini-modal-link"><button type="button" onclick="abrirModalValor()">Ver por qué puede pagarse solo →</button></p>
-<div class="mobile-bimodal-card">
-  <div class="mobile-bimodal-eyebrow">Espera — una cosa más</div>
-  <div class="mobile-bimodal-title">
-    <span>No es rápido.</span><br>
-    <span>No es magia.</span><br>
-    <strong>Es Semilla.</strong>
-  </div>
-  <p>Una sola fuga invisible que descubras puede pagar los <b>US$9,90</b>. Pero lo más importante viene después: darle destino a cada peso y caminar, mes a mes, hacia tu Cosecha familiar.</p>
-  <a href="https://pay.hotmart.com/I106159232F?checkoutMode=10&amp;bid=1780781520729">Empezar con mi Semilla — $9,90 →</a>
-  <small>Precio fijo: US$9,90. Hotmart o tu banco convierte automáticamente a la moneda de tu país.</small>
-</div>
 <p class="garantia-mini">↩ GARANTÍA TOTAL DE SATISFACCIÓN POR 7 DÍAS</p>
 </div>
 </div>
@@ -1772,7 +1683,7 @@ function cerrarModal(){
   });
 
   // Fallback extra caso o preview do celular atrase scripts.
-  setTimeout(mostrar, 3800);
+  setTimeout(mostrar, 4200);
 
   // Mostra quando a pessoa começa a rolar a página.
   window.addEventListener('scroll', function(){
